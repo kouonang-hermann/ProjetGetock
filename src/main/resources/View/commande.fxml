@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="100.0" prefHeight="529.0" prefWidth="288.0" style="-fx-background-color: green; -fx-opacity: 1;" AnchorPane.bottomAnchor="10.399999999999977" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="44.0" layoutY="29.0" style="-fx-background-color: white;" text="Etat de commande">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <CheckBox layoutX="44.0" layoutY="268.0" mnemonicParsing="false" text="En cour de traitement" />
+                  <CheckBox layoutX="44.0" layoutY="311.0" mnemonicParsing="false" text="Valider" />
+                  <CheckBox layoutX="44.0" layoutY="358.0" mnemonicParsing="false" text="Litigieuse" />
+                  <CheckBox layoutX="44.0" layoutY="410.0" mnemonicParsing="false" text="Rejeter" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="325.0" layoutY="100.0" prefHeight="529.0" prefWidth="517.0" AnchorPane.bottomAnchor="10.399999999999977" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <TableView layoutX="14.0" layoutY="78.0" prefHeight="339.0" prefWidth="477.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="ID" />
+                        <TableColumn prefWidth="75.0" text="Nom" />
+                        <TableColumn prefWidth="75.0" text="Quantité" />
+                        <TableColumn prefWidth="75.0" text="Prix-Unit" />
+                        <TableColumn prefWidth="75.20001220703125" text="Prix-Total" />
+                     </columns>
+                  </TableView>
+                  <TextField layoutX="14.0" layoutY="34.0" AnchorPane.leftAnchor="10.0" />
+                  <Button layoutX="188.0" layoutY="34.0" mnemonicParsing="false" text="...." AnchorPane.leftAnchor="165.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" prefHeight="66.0" prefWidth="839.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.799999999999955" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button layoutX="25.0" layoutY="21.0" mnemonicParsing="false" text="Article" />
+                  <Button layoutX="161.0" layoutY="20.0" mnemonicParsing="false" text="Commande" />
+                  <Button layoutX="338.0" layoutY="21.0" mnemonicParsing="false" text="Historique" />
+                  <Button layoutX="732.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Deconnexion" />
+                  <Button layoutX="509.0" layoutY="21.0" mnemonicParsing="false" text="Stock" />
+                  <AnchorPane layoutX="161.0" layoutY="49.0" prefHeight="2.0" prefWidth="78.0" style="-fx-background-color: green;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
